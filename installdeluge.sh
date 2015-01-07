@@ -9,17 +9,11 @@ dpkg --purge remove deluged
 apt-get --purge remove deluge
 apt-get --purge remove deluged
 rmdir -r /opt/deluge/
-rmdir -r /usr/src/deluge-1.3.1
-rmdir -r /usr/src/deluge-1.3.2
-rmdir -r /usr/src/deluge-1.3.3
-rmdir -r /usr/src/deluge-1.3.4
-rmdir -r /usr/src/deluge-1.3.5
 rmdir -r /usr/src/deluge-1.3.6
 rmdir -r /usr/src/deluge-1.3.7
 rmdir -r /usr/src/deluge-1.3.8
 rmdir -r /usr/src/deluge-1.3.9
 rmdir -r /usr/src/deluge-1.3.10
-rmdir -r /usr/src/deluge-1.3.11
 userdel -r deluge
 apt-get update
 aptitude install python python-twisted python-twisted-web2 python-openssl \
@@ -27,10 +21,10 @@ python-simplejson python-setuptools gettext python-xdg python-chardet \
 python-geoip python-libtorrent python-notify python-pygame python-gtk2 \
 python-gtk2-dev librsvg2-dev xdg-utils python-mako
 cd /usr/src
-wget http://download.deluge-torrent.org/source/deluge-1.3.11.tar.gz
-tar xfz deluge-1.3.11.tar.gz
-rm deluge-1.3.11.tar.gz
-cd deluge-1.3.11
+wget http://download.deluge-torrent.org/source/deluge-1.3.6.tar.gz
+tar xfz deluge-1.3.6.tar.gz
+rm deluge-1.3.6.tar.gz
+cd deluge-1.3.6
 python setup.py clean -a
 python setup.py build
 python setup.py install
