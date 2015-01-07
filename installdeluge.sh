@@ -1,4 +1,4 @@
-#Install Deluge Latest
+#Install Deluge
 clear
 echo -ne "Enter Deluge Port [30000]:"
 read delugeport
@@ -19,6 +19,7 @@ rmdir -r /usr/src/deluge-1.3.7
 rmdir -r /usr/src/deluge-1.3.8
 rmdir -r /usr/src/deluge-1.3.9
 rmdir -r /usr/src/deluge-1.3.10
+rmdir -r /usr/src/deluge-1.3.11
 userdel -r deluge
 apt-get update
 aptitude install python python-twisted python-twisted-web2 python-openssl \
