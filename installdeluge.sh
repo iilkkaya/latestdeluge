@@ -1,5 +1,6 @@
 #Install Deluge
 clear
+echo "Writed by ilkkaya"
 echo -ne "Enter Deluge Port [30000]:"
 read delugeport
 killall deluge deluge-web
@@ -9,6 +10,12 @@ dpkg --purge remove deluged
 apt-get --purge remove deluge
 apt-get --purge remove deluged
 rmdir -r /opt/deluge/
+rmdir -r /usr/src/deluge-1.3.0
+rmdir -r /usr/src/deluge-1.3.1
+rmdir -r /usr/src/deluge-1.3.2
+rmdir -r /usr/src/deluge-1.3.3
+rmdir -r /usr/src/deluge-1.3.4
+rmdir -r /usr/src/deluge-1.3.5
 rmdir -r /usr/src/deluge-1.3.6
 rmdir -r /usr/src/deluge-1.3.7
 rmdir -r /usr/src/deluge-1.3.8
