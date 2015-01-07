@@ -21,10 +21,10 @@ python-simplejson python-setuptools gettext python-xdg python-chardet \
 python-geoip python-libtorrent python-notify python-pygame python-gtk2 \
 python-gtk2-dev librsvg2-dev xdg-utils python-mako
 cd /usr/src
-wget http://download.deluge-torrent.org/source/deluge-1.3.6.tar.gz
-tar xfz deluge-1.3.6.tar.gz
-rm deluge-1.3.6.tar.gz
-cd deluge-1.3.6
+wget http://download.deluge-torrent.org/source/deluge-1.3.11.tar.gz
+tar xfz deluge-1.3.11.tar.gz
+rm deluge-1.3.11.tar.gz
+cd deluge-1.3.11
 python setup.py clean -a
 python setup.py build
 python setup.py install
