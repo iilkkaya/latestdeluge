@@ -1,6 +1,5 @@
 #Install Deluge
 clear
-echo "Writed by ilkkaya"
 echo -ne "Enter Deluge Port [30000]:"
 read delugeport
 killall deluge deluge-web
